@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "06c7c303-71e0-49b7-b164-8ac8d4149bb6",
+		"name": "Usuario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19429688"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"teste2\",\r\n    \"senha\": \"senha1234\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"niloChavez\",\r\n    \"senha\": \"123456789\",\r\n    \"cargo\": \"medico\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/registrarUsuario",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"registrarUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Usuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/listarUsuario",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"listarUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AtualizarUsuario",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Usuario",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

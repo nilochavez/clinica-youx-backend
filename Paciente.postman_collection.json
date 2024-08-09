@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "049d5241-4f68-42d3-8462-06f6d0186abd",
+		"name": "Paciente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19429688"
+	},
+	"item": [
+		{
+			"name": "Listar Pacientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pacientes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Pacientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pacientes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Paciente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"nome\": \"Gremio da Silva campeao\",\r\n    \"cpf\": \"02486031058\",\r\n    \"dataNascimento\": \"1985-04-12\",\r\n    \"peso\": 72.50,\r\n    \"altura\": 1.75,\r\n    \"uf\": \"SP\",\r\n    \"ativo\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/pacientes/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Paciente",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzcHJpbmcuYXBwbGljYXRpb24ubmFtZSIsInN1YiI6Im5pbG8yIiwiZXhwIjoxNzIzMDY0Nzc0fQ.WHgmlV_dW6gwKsWuPf68_tLNKw6ocI09uGeLcRyOehc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pacientes/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
