@@ -97,10 +97,10 @@ A seguir estão as rotas disponíveis na API da Clínica YOUX Backend para geren
 
 Documentação das Rotas da API - Clínica YOUX Backend
 A seguir estão as rotas disponíveis na API da Clínica YOUX Backend para gerenciar pacientes, juntamente com exemplos de requisições e os dados necessários.<br>
-Foi realizdo deploy no servidor [Render](https://render.com/)
-.
-<br>
-**Listar Pacientes**<br>:
+Foi realizdo deploy no servidor [Render](https://render.com/) <br>
+  
+
+**Listar Pacientes**<br>
 Método: GET<br>
 URL: https://clinica-youx-backend.onrender.com/pacientes
 URL: localhost:8080/login
@@ -109,7 +109,7 @@ Descrição: Esta rota retorna uma lista de todos os pacientes cadastrados no si
 **Criar Paciente** <br>
 Método: POST <br>
 URL: https://clinica-youx-backend.onrender.com/pacientes<br>
-URL: https:localhost:8080/pacientes<br>
+URL: localhost:8080/pacientes<br>
 
 Descrição: Esta rota cria um novo paciente no sistema.<br>
 Corpo da Requisição (JSON):<br>
@@ -128,10 +128,10 @@ Corpo da Requisição (JSON):<br>
 **Atualizar Paciente** <br>
 Método: PUT <br>
 URL: https://clinica-youx-backend.onrender.com/pacientes<br>
-URL: https:localhost:8080/pacientes<br>
+URL: localhost:8080/pacientes<br>
 
 Descrição: Esta rota cria um novo paciente no sistema.<br>
-Autenticação: Necessário passar o Bearer token de autenticação.
+Autenticação: Necessário passar o Bearer token de autenticação.<br>
 
 Corpo da Requisição (JSON):<br>
  ```
@@ -145,14 +145,14 @@ Corpo da Requisição (JSON):<br>
 }
 
  ```
-Deletar Paciente
-Método: DELETE
-URL: https://clinica-youx-backend.onrender.com/pacientes/{id}
-URL: https://localhost:8080/pacientes/{id}
+**Deletar Paciente**<br>
+Método: DELETE<br>
+URL: https://clinica-youx-backend.onrender.com/pacientes/{id}<br>
+URL: localhost:8080/pacientes/{id}<br>
 
-Descrição: Esta rota deleta um paciente do sistema.
-Autenticação: Necessário passar o token de autenticação.
-Parâmetros: Substitua {id} pelo ID do paciente a ser deletado.  
+Descrição: Esta rota deleta um paciente do sistema.<br>
+Autenticação: Necessário passar o token de autenticação.<br>
+Parâmetros: Substitua {id} pelo ID do paciente a ser deletado. <br> 
 
 
 
