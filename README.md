@@ -57,15 +57,15 @@ O frontend estará disponível em http://localhost:4200.
 Configuração de Usuários e Permissões
 A aplicação está configurada com dois tipos de usuários:
 
-Usuário Admin (Médico)<br>
+Usuário Admin (Médico) <br>
 
-Nome de Usuário: admin<br>
-Senha: admin<br>
+**Nome de Usuário: admin** <br>
+**Senha: admin**   <br>
 Permissões: Acesso total, incluindo criação, edição e exclusão de pacientes.<br>
 
 Usuario Enfermeiro:<br>
-Nome de Usuário: user<br>
-Senha: us
+**Nome de Usuário: user** <br>
+**Senha: user** <br>
 Permissões: Acesso limitado, pode cadastrar novos pacientes.<br>
 
 **Testar a Aplicação**<br>
