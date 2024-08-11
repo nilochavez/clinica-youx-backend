@@ -65,7 +65,7 @@ Permissões: Acesso total, incluindo criação, edição e exclusão de paciente
 
 Usuario Enfermeiro:<br>
 Nome de Usuário: user<br>
-Senha: user<br>
+Senha: us
 Permissões: Acesso limitado, pode cadastrar novos pacientes.<br>
 
 **Testar a Aplicação**<br>
@@ -85,5 +85,75 @@ Certifique-se de que você tem permissões adequadas para importar dados no banc
 Problemas ao Construir o Projeto:<br>
 
 Verifique se você tem o Maven corretamente instalado e configurado.
+
 Certifique-se de que todas as dependências estão corretamente definidas no pom.xml.
-   
+
+# Documentação da Rotas da APi - 
+
+A seguir estão as rotas disponíveis na API da Clínica YOUX Backend para gerenciar pacientes, juntamente com exemplos de requisições e os dados necessários.
+
+
+
+
+Documentação das Rotas da API - Clínica YOUX Backend
+A seguir estão as rotas disponíveis na API da Clínica YOUX Backend para gerenciar pacientes, juntamente com exemplos de requisições e os dados necessários.<br>
+Foi realizdo deploy no servidor [Render](https://render.com/)
+.
+<br>
+**Listar Pacientes**<br>:
+Método: GET<br>
+URL: https://clinica-youx-backend.onrender.com/pacientes
+URL: localhost:8080/login
+Descrição: Esta rota retorna uma lista de todos os pacientes cadastrados no sistema.<br>
+
+**Criar Paciente** <br>
+Método: POST <br>
+URL: https://clinica-youx-backend.onrender.com/pacientes<br>
+URL: https:localhost:8080/pacientes<br>
+
+Descrição: Esta rota cria um novo paciente no sistema.<br>
+Corpo da Requisição (JSON):<br>
+ ```
+{
+    "nome": "Nilo",
+    "cpf": "045787878787",
+    "dataNascimento": "1990-05-15",
+    "peso": 70.5,
+    "altura": 1.80,
+    "uf": "RS"
+}
+
+ ```
+
+**Atualizar Paciente** <br>
+Método: PUT <br>
+URL: https://clinica-youx-backend.onrender.com/pacientes<br>
+URL: https:localhost:8080/pacientes<br>
+
+Descrição: Esta rota cria um novo paciente no sistema.<br>
+Autenticação: Necessário passar o Bearer token de autenticação.
+
+Corpo da Requisição (JSON):<br>
+ ```
+{
+    "nome": "Nilo",
+    "cpf": "045787878787",
+    "dataNascimento": "1990-05-15",
+    "peso": 70.5,
+    "altura": 1.80,
+    "uf": "RS"
+}
+
+ ```
+Deletar Paciente
+Método: DELETE
+URL: https://clinica-youx-backend.onrender.com/pacientes/{id}
+URL: https://localhost:8080/pacientes/{id}
+
+Descrição: Esta rota deleta um paciente do sistema.
+Autenticação: Necessário passar o token de autenticação.
+Parâmetros: Substitua {id} pelo ID do paciente a ser deletado.  
+
+
+
+
