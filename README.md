@@ -1,10 +1,10 @@
 # Teste Prático
 
-Este projeto é uma aplicação desenvolvida com Java Spring Boot e Angular 17 para gerenciamento de pacientes. A aplicação utiliza PostgreSQL para o banco de dados e inclui autenticação e autorização com Spring Security.
+Este projeto é uma aplicação desenvolvida com Java Spring Boot e Angular 17 para gerenciamento de pacientes. A aplicação utiliza PostgreSQL para o banco de dados e inclui autenticação e autorização com Spring Security.<br>
 
 ## Pré-requisitos
 
-Certifique-se de ter as seguintes ferramentas instaladas:
+Certifique-se de ter as seguintes ferramentas instaladas:<br>
 
 - [Java JDK 17](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html)
 - [Maven](https://maven.apache.org/download.cgi)
@@ -14,10 +14,10 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 
 ### 1. Configuração Local
 
-1. **Instale o PostgreSQL**: Se ainda não o fez, instale o PostgreSQL em sua máquina.
+1. **Instale o PostgreSQL**: Se ainda não o fez, instale o PostgreSQL em sua máquina.<br>
    
 2. **Crie um Banco de Dados**: Utilize o comando psql para importar o arquivo backup.banco para o seu banco de dados:<br>
-psql -U seu_usuario -d seu_banco_de_dados -f path/para/backup.banco
+psql -U seu_usuario -d seu_banco_de_dados -f path/para/backup.banco<br>
 
 
 3. **Configure a Conexão do Banco de Dados**: Atualize as configurações de conexão no arquivo `src/main/resources/application.properties` com suas credenciais PostgreSQL:
@@ -30,32 +30,34 @@ psql -U seu_usuario -d seu_banco_de_dados -f path/para/backup.banco
 
 ### 4. Configuração Local
 1. **Clonar o Repositório**
-Clone o repositório para sua máquina local:
+Clone o repositório para sua máquina local:<br>
 
 
-Copiar código
-git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
-cd SEU_REPOSITORIO
-2. **Construir e Executar a Aplicação**
-Navegue até o diretório do projeto e execute os seguintes comandos:
+Copiar código <br>
+git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git <br>
+cd SEU_REPOSITORIO <br>
 
+2. **Construir e Executar a Aplicação** <br>
+Navegue até o diretório do projeto e execute os seguintes comandos:<br>
 
-Copiar código
-./mvnw clean install
-./mvnw spring-boot:run
-Se estiver usando Windows, substitua ./mvnw por mvnw.cmd.
+Copiar código<br>
+./mvnw clean install<br>
+./mvnw spring-boot:run<br>
+Se estiver usando Windows, substitua ./mvnw por mvnw.cmd.<br>
 
-5. ##Executar a Aplicação Frontend (Angular)
-Certifique-se de que o backend está em execução. Em um novo terminal, navegue até o diretório do frontend e execute:
+3. **Executar a Aplicação Frontend (Angular)** <br>
+Certifique-se de que o backend está em execução. Em um novo terminal, navegue até o diretório do frontend e execute: <br>
 
-bash
-Copiar código
-npm install
-ng serve
-O frontend estará disponível em http://localhost:4200.
+bash<br>
+Copiar código<br>
+npm install<br>
+ng serve<br>
 
-Configuração de Usuários e Permissões
-A aplicação está configurada com dois tipos de usuários:
+O frontend estará disponível em http://localhost:4200. <br>
+
+Configuração de Usuários e Permissões <br>
+
+A aplicação está configurada com dois tipos de usuários: <br>
 
 Usuário Admin (Médico) <br>
 
